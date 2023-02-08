@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>Here is your Madlib!</title>
+</head>
+<body>
+
+<h1>Hi There!</h1>
+
+<form action="/madlib">
+  
+<p>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
+  When {{ person }} went to pick it up, it burst into flames in a totally
+  <ul>
+  {% for adjective in adjectives %} 
+    <li>{{ adjective }}</li>
+  {% endfor %}</ul> way</p>
+</form>
+
+</body>
+</html>

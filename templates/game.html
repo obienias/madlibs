@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hi There!</title>
+</head>
+<body>
+
+<h1>Hi There!</h1>
+
+<!-- <p>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
+When {{ person }} went to pick it up, it burst into flames in a totally
+{{ adjective }} way</p> -->
+
+<form action="/madlib">
+  Please provide a persons name:  <input type="text" name="person" id="person">
+  <br>
+    <label for="color">Please provide a color:</label>
+    <select name="color" id="color">
+      <option value="teal">teal</option>
+      <option value="pink">pink</option>
+      <option value="red">red</option>
+      <option value="orange">orange</option>
+    </select>
+  <br>
+  
+  Please provide a noun:  <input type="text" name="noun" id="noun">
+  <br>
+  Please pick an adjective:  
+  <input type="checkbox" name="adjectives" value="annoying" id="adjectives">
+  <label for="annoying">annoying</label>
+  <input type="checkbox" name="adjectives" value="happy" id="adjectives">
+  <label for="happy">happy</label>
+  <input type="submit">
+</form>
+
+</body>
+</html>
