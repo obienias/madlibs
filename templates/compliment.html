@@ -4,7 +4,12 @@
   <title>A Compliment</title>
 </head>
 <body>
-    Hi {{ person }}! I think you're {{ compliment }}!<br>
+    Hi {{ person }}! I think you're <br>
+    <ul>
+      {% for compliment in compliments %}
+        <li>{{ compliment }}</li>
+      {% endfor %}
+    </ul>
        
     <form action="/game">
       Would you like to play a game? 

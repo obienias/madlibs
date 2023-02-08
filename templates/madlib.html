@@ -7,14 +7,11 @@
 
 <h1>Hi There!</h1>
 
-<form action="/madlib">
+<form action="/madlib" method="POST">
   
 <p>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
-  When {{ person }} went to pick it up, it burst into flames in a totally
-  <ul>
-  {% for adjective in adjectives %} 
-    <li>{{ adjective }}</li>
-  {% endfor %}</ul> way</p>
+  When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }}
+  way</p>
 </form>
 
 </body>
